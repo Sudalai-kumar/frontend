@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    body{
+      background-color: hsl(185, 75%, 39%); 
+      background-image: url('images/bg-pattern-top.svg'),url('images/bg-pattern-bottom.svg');
+      background-repeat: no-repeat,no-repeat;
+      background-position:-20vh -50vh ,90vh 45vh ;
+      background-size: 60%,70%;
+      height:100vh;
+    }
+    
+    #box{
+      background-color: white;
+      text-align: center;
+      width: 350px;
+      height:360px;
+      padding: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      border-radius: 20px;
+      position: absolute;
+      top: 20%;
+      left: 40%;
+     
+    }
+    #bg img{
+      
+     
+      border-radius: 20px 20px 0px 0px;
+      transform: translateY(-20px);
+      
+    }
+    #info{
+      background-color: white;
+      transform: translateY(-30px);
+      
+    }
+    #info h3,p{
+      transform: translateY(-45px);
+      font-size:  18px;
+      font-family:sans-serif;
+    }
+    #other-info{
+      background-color: white;
+      transform: translateY(-40px);
+      border-radius: 20px;
+    }
+    #profile{
+      border-radius: 50%;
+      transform: translateY(-50px);
+      border: 5px solid white;
+    }
+    #table{
+      border-top: 1px solid rgb(218, 203, 203);
+      display: flex;
+      transform: translateY(-30px);
+    }
+    td{
+      padding-top: 20px;
+      padding-left: 30px;
+      min-width:75px;
+      color: rgb(167, 167, 167) ;
+    }
+    td b{
+      color:black;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="box">
+    <div id="bg">
+    <img src="images/bg-pattern-card.svg" >
+    </div>
+    <div id="info">
+      <img src="images/image-victor.jpg" alt="image error" id="profile">
+      <h3> Victor Crest <b style="color: rgb(167, 167, 167);">26</b></h3>
+      <p style="color: rgb(167,167,167);">London</p>
+    </div>
+    <div id="other-info">
+      <table id="table">
+        <tr>
+          <td>
+            <b>80K</b><br>
+            Followers
+          </td>
+          <td>
+            <b>803K</b><br>
+            Likes
+          </td>
+          <td>
+            <b>1.4K</b><br>
+            Photos
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+</body>
+</html>

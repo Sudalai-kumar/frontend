@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    padding: 5%;
+    font-family: "League Spartan";
+   
+}
+#intro{
+    text-align: center;
+    width: 100%;
+        
+}
+#intro h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+    font-weight:900;
+}
+#intro p{
+    color:hsl(303, 10%, 53%) ;
+    
+    font-weight:500 ;
+    
+}
+.star{
+    background-color:hsl(300, 24%, 96%);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.person{
+    background-color: hsl(300, 43%, 22%);
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.profile{
+    border-radius: 50%;
+    width:40px ;
+    
+}
+.info{
+    position: relative;
+    left: 60px;
+    top: -60px;
+    color:hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 600;
+}
+.minfo{
+    position: relative;
+    top:-40px;
+    color: hsl(300, 24%, 96%);
+}
+span{
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+@media only screen and (min-width:800px) {
+    body{
+        padding: 10%;
+        padding-top: 5%;
+        background-image: url('images/bg-pattern-top-desktop.svg'),url('images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat,no-repeat;
+        background-position: top left,bottom right;
+        height: 800px;
+        width: 800px;
+    }
+    #intro{
+        text-align: left;
+        width: 400px;
+    }
+    .star{
+        text-align:left ;
+        width: 400px;
+    }
+    .star p{
+        float:right;
+        position: relative;
+        bottom: 15px;
+        right: 30px;
+    }
+    .person{
+        width: 350px;
+        height: 220px;
+    }
+    #stars{
+        position: relative;
+        left: 50vw;
+        top:-25vh;
+    }
+    #Reviews{
+        position: relative;
+        left: -8vw;
+    }
+    #Report{
+        position: relative;
+        left: -5vw;
+    }
+    #BestTech{
+        position: relative;
+        left: -2vw;
+    }
+    #Colton{
+        position: relative;
+        top:-15vh;
+    }
+    #irene{
+        position: relative;
+        top: -40vh;
+        left:26vw;
+    }
+    #anne{
+        position: relative;
+        top:-65vh;
+        left: 52vw;
+    }
+}
